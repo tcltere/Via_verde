@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class=" st ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/Home/Index"><img class="n_img" src="~/Content/img/logo_via_verde.png" width="120" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="line">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="~/Vistauno/ingreso">Registrarse <span class="sr-only">(current)</span></a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="~/Vistauno/activadores">Activadores</a>
+
+                        </li>
+
+                         <!--  ********reciclar ya no va en el layout******
+                           <li class="nav-item">
+                           <a class="nav-link  text-white" href="~/Vistauno/reciclar">Reciclar</a>
+                         </li>
+                         ***********  -->
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="~/Vistauno/principal">Conócenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="~/Vistauno/beneficios">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="~/area_log/log/Index">Cuenta</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <style>
+        .line{
+            transition: width 0.5s;
+            transition-delay: 0.3s;
+            width:0px;
+            height:1px;
+            background-color:#4cff00;
+            
+        }
+        .line:hover{
+              width: 70%;
+            
+        }
+        .st{
+          font-family:'Comic Sans MS', sans-serif !important;
+          font-size:1.5em !important;
+        
+         
+        }
+   
+    </style>
+  
+    
+    <div class=" body-content">
+        @RenderBody()
+       
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,219 @@
+﻿body {
+    background-image: url('../img/horizonte-verde.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*estilos genericos*/
+.jumbo {
+
+    font-family: 'Comic Sans MS' !important;
+    padding-left: 4%;
+    padding-right:2%;
+    padding-top:30px;
+}
+
+
+h3{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    color: aliceblue;
+    padding-top: 5%;
+}
+h4{
+   
+    font-family: 'Comic Sans MS';
+    color: aliceblue;
+  
+}
+h1{
+    color:#97cce6;
+}
+.p_esp {
+    color:#ccc;
+    font-family:Calibri;
+}
+.p_esp2{
+    color:black;
+    font-family:Elephant;
+}
+td{
+    color:chartreuse;
+}
+th{
+    color:rgba(69,9,121,1);
+}
+li {
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+/*estilos genericos--fin*/
+
+
+/*estilos ingreso*/
+
+.img_banner_r{
+    background-color:#808080;
+    opacity:0.6;
+}
+.img_banner_r img{ 
+  width:60px;
+  height:50px;
+  vertical-align:bottom;
+}
+.pd{
+   padding-left:15%;
+}
+
+.btn {
+    color: black !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    background: #ccc !important;
+    border: 1px solid chartreuse !important;
+    outline: 1px solid !important;
+    outline-color: rgba(49, 138, 172, 0.4) !important;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) !important;
+
+}
+    .btn:hover {
+        box-shadow: inset 0 0 20px rgb(2,0,36), 0 0 20px #808080;
+        outline-color: chartreuse;
+        text-shadow: 1px 1px 6px #fff;
+    }
+
+    .pc{
+       padding-top:10%;     
+        text-align:center;
+    }
+    span{
+        color:chartreuse;
+        font-size:20px;
+        font-family:'Comic Sans MS';
+     
+    }
+    /*estilos de la vista_uno*/
+    .gf btn{
+
+    }
+    .mision_vision{
+        text-align:center;
+        color:chartreuse;
+        font-family:'Comic Sans MS';
+        padding-top:5%;
+    }
+    .mision_vision h4{
+    color:white;  
+     }
+        .mision_vision p {
+            color: chartreuse;
+            text-align: left;
+        }
+
+/*estilos-footer*/
+.foo {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+.logos li {
+    display: inline-block;
+    padding-top: 30%;
+    padding-left: 10%;
+}
+
+.foo img {
+    width: 30px;
+    height: 30px;
+}
+
+.rt a {
+    color: cadetblue !important;
+}
+
+.rt li {
+    text-align: left;
+    padding-top: 5%;
+}
+
+.img_log_vv {
+    width: 120px !important;
+    height: 150px !important;
+    padding-top: 8%;
+}
+/*estilos-footer-fin*/
+/*estilos-beneficios-cabecera*/
+.imagen_table{
+   width:100%;
+   height:auto;
+   opacity:0.6;
+}
+.bnf li{
+    padding:2%;
+    color:chartreuse;
+}
+.bnf p {
+    color: rgb(2,0,36);
+}
+.tbl2{
+    padding-top:3%;
+ 
+}
+.bnf img{
+    padding-top:10%;
+    opacity:0.4;
+}
+
+/*estilos-beneficios-cabecera-fin*/
+
+/*galeria*/
+.imagen_galeria_p {
+    background-image: url(../img/reciclaje_vidrio_dos.jpg);
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:aliceblue;
+}
+.contenedor {
+    position: relative;
+    width:100%;
+    height:300px;
+}
+.imgs {
+    padding-top: 10%;
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    transition: 1s ease;
+    display: inline-block;
+}
+.imgs:hover {
+    width: 210px;
+   
+}
+/*galeria-fin*/
+/*------------------------mediaquery--------------------------*/
+@media screen and (max-width: 600px) {
+    .logos {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .rt {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .gif {
+        display: none;
+    }
+}
+.lol{
+
+}

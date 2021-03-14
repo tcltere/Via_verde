@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "cta_activador";
+}
+@Styles.Render("~/Content/estilo/style_dos.css")
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="jumbo">
+        <div class="jumbotron" style=" background-image: url('../../../../Content/img/fondo_flores.png');">
+            <h1 class="display-4">HOLA "@ViewData["nom"]"  YA ERES UN  @ViewData["clasi"].ToString()</h1>
+            <p class="lead p_esp2 ">GRACIAS POR SER PARTE DEL CAMBIO</p>
+            <hr class="my-4">
+            <p>Te invitamos a conocer el stock disponible de materiales.</p>
+            <a class="btn  btn-lg" href="~/Vistauno/stock" role="button">Ver Stock</a>
+        </div>
+        <div class="row">
+            <form action="/" method="post">             
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="clasi" id="gridRadios2" value="vales">
+                            <label class="form-check-label text-white" for="gridRadios2">
+                                Descuentos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="clasi" id="gridRadios2" value="vasos">
+                            <label class="form-check-label text-white" for="gridRadios2">
+                                Vasos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="clasi" id="gridRadios2" value="poleras">
+                            <label class="form-check-label text-white" for="gridRadios2">
+                                Poleras
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="clasi" id="gridRadios2" value="bolsas">
+                            <label class="form-check-label text-white" for="gridRadios2">
+                                Bolsas
+                            </label>
+                        </div>
+                    </div>
+                    <input type="number" name="canti" value="Cantidad" />
+                    <input type="submit" name="boton" value="Enviar productos" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
